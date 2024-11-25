@@ -640,6 +640,69 @@ header .header-wrap .header-icon button.logout {
   height: 21px;
 }
 
+footer {
+  height: 370px;
+  padding: 32px 65px;
+  background-color: #1b1529;
+}
+footer .footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+}
+footer .footer-title::after {
+  content: "";
+  height: 20px;
+  width: 3px;
+  background-color: #5577ff;
+  left: -10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* 기본 컨테이너 스타일 */
+.career-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 숨겨진 라디오 버튼 */
+.radio-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 라벨 기본 스타일 */
+.radio-label {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #646464;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 라디오 버튼 선택 시 라벨 스타일 변경 */
+.radio-input:checked + .radio-label {
+  background-color: #6a0dad; /* 체크 시 배경색 */
+  color: #ffffff; /* 체크 시 글자색 */
+  border-color: #6a0dad; /* 체크 시 테두리색 */
+}
+
 .main .main-3d {
   display: flex;
   height: 633px;
@@ -676,12 +739,29 @@ header .header-wrap .header-icon button.logout {
   flex: 1;
   min-width: 500px;
   height: 100%;
+  position: relative;
 }
-.main .main-3d .main-center img {
+.main .main-3d .main-center::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 500px;
+  background-color: #3f2a4e;
+  opacity: 0.38;
+  box-shadow: inset 0px 4px 50px rgb(0, 0, 0);
+  filter: blur(80px);
+  border-radius: 50%;
+}
+.main .main-3d .main-center canvas {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
 }
 .main .main-3d .main-btn {
   display: flex;
