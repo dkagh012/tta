@@ -1,4 +1,5 @@
 .main {
+  min-height: calc(100% - 450px);
   .main-3d {
     display: flex;
     height: 633px;
@@ -30,6 +31,15 @@
             letter-spacing: 0.2;
             font-weight: 500;
             color: white;
+            &.green {
+              color: #33c860;
+            }
+            &.yellow {
+              color: #ffca37;
+            }
+            &.red {
+              color: #c94c4c;
+            }
           }
         }
       }
@@ -96,8 +106,7 @@
           background-image: url(/assets/images/btn-b.png);
           color: #e2dcff;
 
-          &:focus,
-          &:active {
+          &:hover {
             background-image: url(/assets/images/btn-p.png);
           }
         }
@@ -105,11 +114,6 @@
         &.stop {
           background-image: url(/assets/images/btn-g.png);
           color: #e6e6e6;
-
-          &:focus,
-          &:active {
-            background-image: url(/assets/images/btn-g-focus.png);
-          }
         }
       }
     }

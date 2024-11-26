@@ -37,7 +37,7 @@
             </li>
             <li>
               <p>공정진행상태</p>
-              <span>동작중</span>
+              <span class="green">동작중</span>
             </li>
             <li>
               <p>공정명</p>
@@ -49,11 +49,11 @@
             </li>
             <li>
               <p>알람</p>
-              <span>경알람</span>
+              <span class="yellow">경알람</span>
             </li>
             <li>
               <p>안전문</p>
-              <span>열림</span>
+              <span class="red">열림</span>
             </li>
           </ul>
         </div>
@@ -63,100 +63,1643 @@
         <div class="main-btn">
           <button type="button" class="emg">비상<br />정지</button>
           <button type="button" class="start">작업<br />실행</button>
-          <!-- <button type="button" class="start stop">작업<br />실행</button> -->
+          <!-- <button type="button" class="stop">작업<br />실행</button> -->
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="area wrap">
-        <p class="footer-title">구역</p>
-        <ul class="list">
-          <div class="">
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career1"
-                name="career"
-                value="career1"
-                class="radio-input"
-              />
-              <label for="career1" class="radio-label">Career 1</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career2"
-                name="career"
-                value="career2"
-                class="radio-input"
-              />
-              <label for="career2" class="radio-label">Career 2</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career3"
-                name="career"
-                value="career3"
-                class="radio-input"
-              />
-              <label for="career3" class="radio-label">Career 3</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career4"
-                name="career"
-                value="career4"
-                class="radio-input"
-              />
-              <label for="career4" class="radio-label">Career 4</label>
-            </li>
+      <article class="table_tab">
+        <button type="button" class="control-btn-1 active">제어</button>
+        <button type="button" class="control-btn-2">관제</button>
+      </article>
+      <div class="active" id="control">
+        <div class="area wrap">
+          <div class="footer-title">
+            <p>구역</p>
           </div>
-          <div class="">
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career5"
-                name="career"
-                value="career5"
-                class="radio-input"
-              />
-              <label for="career5" class="radio-label">Career 5</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career6"
-                name="career"
-                value="career6"
-                class="radio-input"
-              />
-              <label for="career6" class="radio-label">Career 6</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career7"
-                name="career"
-                value="career7"
-                class="radio-input"
-              />
-              <label for="career7" class="radio-label">Career 7</label>
-            </li>
-            <li class="item-box">
-              <input
-                type="radio"
-                id="career8"
-                name="career"
-                value="career8"
-                class="radio-input"
-              />
-              <label for="career8" class="radio-label">Career 8</label>
-            </li>
+          <ul class="list">
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career1"
+                      name="career"
+                      value="career1"
+                      class="radio-input radio"
+                    />
+                    <label for="career1" class="radio-label click"
+                      ><div>1 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career2"
+                      name="career"
+                      value="career2"
+                      class="radio-input radio"
+                    />
+                    <label for="career2" class="radio-label"
+                      ><div>2 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career3"
+                      name="career"
+                      value="career3"
+                      class="radio-input radio"
+                    />
+                    <label for="career3" class="radio-label"
+                      ><div>3 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career4"
+                      name="career"
+                      value="career4"
+                      class="radio-input radio"
+                    />
+                    <label for="career4" class="radio-label"
+                      ><div>4 구역</div></label
+                    >
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career5"
+                      name="career"
+                      value="career5"
+                      class="radio-input radio"
+                    />
+                    <label for="career5" class="radio-label"
+                      ><div>5 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career6"
+                      name="career"
+                      value="career6"
+                      class="radio-input radio"
+                    />
+                    <label for="career6" class="radio-label"
+                      ><div>6 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career7"
+                      name="career"
+                      value="career7"
+                      class="radio-input radio"
+                    />
+                    <label for="career7" class="radio-label"
+                      ><div>7 구역</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="career8"
+                      name="career"
+                      value="career8"
+                      class="radio-input radio"
+                    />
+                    <label for="career8" class="radio-label"
+                      ><div>8 구역</div></label
+                    >
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">출입구</span>
+            </div>
+          </ul>
+        </div>
+        <div class="box-wrap wrap">
+          <div class="footer-title">
+            <p>박스</p>
+            <button type="button">
+              <img src="/assets/images/icon/cog.svg" alt="" />
+              박스 단계 설정
+            </button>
           </div>
-        </ul>
+          <ul class="list">
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-1"
+                      name="career-group1"
+                      value="career5-1"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-1" class="radio-label"
+                      ><div>1-51</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-1"
+                      name="career-group1"
+                      value="career4-1"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-1" class="radio-label"
+                      ><div>1-41</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-1"
+                      name="career-group1"
+                      value="career3-1"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-1" class="radio-label"
+                      ><div>1-31</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-1"
+                      name="career-group1"
+                      value="career2-1"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-1" class="radio-label"
+                      ><div>1-21</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-1"
+                      name="career-group1"
+                      value="career1-1"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-1" class="radio-label"
+                      ><div>1-11</div></label
+                    >
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-2"
+                      name="career-group2"
+                      value="career5-2"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-2" class="radio-label"
+                      ><div>1-52</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-2"
+                      name="career-group2"
+                      value="career4-2"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-2" class="radio-label"
+                      ><div>1-42</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-2"
+                      name="career-group2"
+                      value="career3-2"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-2" class="radio-label"
+                      ><div>1-32</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-2"
+                      name="career-group2"
+                      value="career2-2"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-2" class="radio-label"
+                      ><div>1-22</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-2"
+                      name="career-group2"
+                      value="career1-2"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-2" class="radio-label"
+                      ><div>1-12</div></label
+                    >
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-3"
+                      name="career-group3"
+                      value="career5-3"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-3" class="radio-label"
+                      ><div>1-53</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-3"
+                      name="career-group3"
+                      value="career4-3"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-3" class="radio-label"
+                      ><div>1-43</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-3"
+                      name="career-group3"
+                      value="career3-3"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-3" class="radio-label"
+                      ><div>1-33</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-3"
+                      name="career-group3"
+                      value="career2-3"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-3" class="radio-label"
+                      ><div>1-23</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-3"
+                      name="career-group3"
+                      value="career1-3"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-3" class="radio-label"
+                      ><div>1-13</div></label
+                    >
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">FRONT</span>
+            </div>
+            <div class="number-wrap">
+              <li class="item-box">
+                <div>5</div>
+              </li>
+              <li class="item-box">
+                <div>4</div>
+              </li>
+              <li class="item-box">
+                <div>3</div>
+              </li>
+              <li class="item-box">
+                <div>2</div>
+              </li>
+              <li class="item-box">
+                <div>1</div>
+              </li>
+            </div>
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-4"
+                      name="career-group4"
+                      value="career5-4"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-4" class="radio-label"
+                      ><div>1-54</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-4"
+                      name="career-group4"
+                      value="career4-4"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-4" class="radio-label"
+                      ><div>1-44</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-4"
+                      name="career-group4"
+                      value="career3-4"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-4" class="radio-label"
+                      ><div>1-34</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-4"
+                      name="career-group4"
+                      value="career2-4"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-4" class="radio-label"
+                      ><div>1-24</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-4"
+                      name="career-group4"
+                      value="career1-4"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-4" class="radio-label"
+                      ><div>1-14</div></label
+                    >
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-5"
+                      name="career-group5"
+                      value="career5-5"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-5" class="radio-label"
+                      ><div>1-55</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-5"
+                      name="career-group5"
+                      value="career4-5"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-5" class="radio-label"
+                      ><div>1-45</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-5"
+                      name="career-group5"
+                      value="career3-5"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-5" class="radio-label"
+                      ><div>1-35</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-5"
+                      name="career-group5"
+                      value="career2-5"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-5" class="radio-label"
+                      ><div>1-25</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-5"
+                      name="career-group5"
+                      value="career1-5"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-5" class="radio-label"
+                      ><div>1-15</div></label
+                    >
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career5-6"
+                      name="career-group6"
+                      value="career5-6"
+                      class="radio-input radio"
+                    />
+                    <label for="career5-6" class="radio-label"
+                      ><div>1-56</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career4-6"
+                      name="career-group6"
+                      value="career4-6"
+                      class="radio-input radio"
+                    />
+                    <label for="career4-6" class="radio-label"
+                      ><div>1-46</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career3-6"
+                      name="career-group6"
+                      value="career3-6"
+                      class="radio-input radio"
+                    />
+                    <label for="career3-6" class="radio-label"
+                      ><div>1-36</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career2-6"
+                      name="career-group6"
+                      value="career2-6"
+                      class="radio-input radio"
+                    />
+                    <label for="career2-6" class="radio-label"
+                      ><div>1-26</div></label
+                    >
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="checkbox"
+                      id="career1-6"
+                      name="career-group6"
+                      value="career1-6"
+                      class="radio-input radio"
+                    />
+                    <label for="career1-6" class="radio-label"
+                      ><div>1-16</div></label
+                    >
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">BACK</span>
+            </div>
+          </ul>
+        </div>
+        <div class="process wrap">
+          <div class="footer-title">
+            <p>공정 선택</p>
+          </div>
+          <ul class="list">
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task1"
+                      name="task"
+                      value="task1"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task1" class="radio-label-2">
+                      <div>톨밥담기</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task2"
+                      name="task"
+                      value="task2"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task2" class="radio-label-2">
+                      <div>투입 공정</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task3"
+                      name="task"
+                      value="task3"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task3" class="radio-label-2">
+                      <div>젤리 공급</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task4"
+                      name="task"
+                      value="task4"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task4" class="radio-label-2">
+                      <div>쌀가루 공급</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task5"
+                      name="task"
+                      value="task5"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task5" class="radio-label-2">
+                      <div>버퍼 이동</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task6"
+                      name="task"
+                      value="task6"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task6" class="radio-label-2">
+                      <div>비전 촬영</div>
+                    </label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task7"
+                      name="task"
+                      value="task7"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task7" class="radio-label-2">
+                      <div>톨밥교체</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task8"
+                      name="task"
+                      value="task8"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task8" class="radio-label-2">
+                      <div>배출 공정</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task9"
+                      name="task"
+                      value="task9"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task9" class="radio-label-2">
+                      <div>출하 공정</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task10"
+                      name="task"
+                      value="task10"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task10" class="radio-label-2">
+                      <div>수분 보충</div>
+                    </label>
+                  </li>
+                  <li class="item-box">
+                    <input
+                      type="radio"
+                      id="task11"
+                      name="task"
+                      value="task11"
+                      class="radio-input-2 radio"
+                    />
+                    <label for="task11" class="radio-label-2">
+                      <div>로더 이동</div>
+                    </label>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="work-list wrap">
+          <div class="footer-title">
+            <p>작업 목록</p>
+          </div>
+          <div class="list">
+            <ul class="top">
+              <li><p class="number">순서</p></li>
+              <li><p class="title">박스명</p></li>
+              <li><p class="process-title">공정명</p></li>
+              <li><p class="mg">관리</p></li>
+            </ul>
+            <ul class="bottom">
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+              <li class="">
+                <p class="number">1</p>
+                <span class="title">STOCK_111</span>
+                <span class="process-title">톨밥담기</span>
+                <span class="mg"><button type="button">취소</button></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="control wrap">
+          <div class="footer-title">
+            <p>환경 제어</p>
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                <p>항온학습</p>
+                <input
+                  type="checkbox"
+                  id="toggle1"
+                  name="toggleGroup1"
+                  class="check-input radio"
+                />
+                <label for="toggle1" class="check-label">
+                  <div class="check-text">
+                    ON
+                    <div class="toggle-thumb"></div>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <p>공기정화</p>
+                <input
+                  type="checkbox"
+                  id="toggle2"
+                  name="toggleGroup2"
+                  class="check-input radio"
+                />
+                <label for="toggle2" class="check-label">
+                  <div class="check-text">
+                    ON
+                    <div class="toggle-thumb"></div>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <p>서큘레이터</p>
+                <input
+                  type="checkbox"
+                  id="toggle3"
+                  name="toggleGroup3"
+                  class="check-input radio"
+                />
+                <label for="toggle3" class="check-label">
+                  <div class="check-text">
+                    ON
+                    <div class="toggle-thumb"></div>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <p>교반기(자동)</p>
+                <input
+                  type="checkbox"
+                  id="toggle4"
+                  name="toggleGroup4"
+                  class="check-input radio"
+                />
+                <label for="toggle4" class="check-label">
+                  <div class="check-text">
+                    ON
+                    <div class="toggle-thumb"></div>
+                  </div>
+                </label>
+              </li>
+            </ul>
+            <div class="push">
+              <p>투입구</p>
+              <input
+                type="checkbox"
+                id="toggle5"
+                name="toggleGroup5"
+                class="check-input radio"
+              />
+              <label for="toggle5" class="check-label">
+                <div class="check-text">
+                  ON
+                  <div class="toggle-thumb"></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="light">
+          <div class="list">
+            <ul>
+              <!-- 전체 -->
+              <li>
+                <p>전체</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-all"
+                    name="light-control-all"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-all" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-all"
+                    name="light-control-all"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-all" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-all"
+                    name="light-control-all"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-all" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 1 -->
+              <li>
+                <p>조도 1</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-1"
+                    name="light-control-1"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-1" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-1"
+                    name="light-control-1"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-1" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-1"
+                    name="light-control-1"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-1" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 2 -->
+              <li>
+                <p>조도 2</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-2"
+                    name="light-control-2"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-2" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-2"
+                    name="light-control-2"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-2" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-2"
+                    name="light-control-2"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-2" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 3 -->
+              <li>
+                <p>조도 3</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-3"
+                    name="light-control-3"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-3" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-3"
+                    name="light-control-3"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-3" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-3"
+                    name="light-control-3"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-3" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 4 -->
+              <li>
+                <p>조도 4</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-4"
+                    name="light-control-4"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-4" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-4"
+                    name="light-control-4"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-4" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-4"
+                    name="light-control-4"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-4" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 5 -->
+              <li>
+                <p>조도 5</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-5"
+                    name="light-control-5"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-5" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-5"
+                    name="light-control-5"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-5" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-5"
+                    name="light-control-5"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-5" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 6 -->
+              <li>
+                <p>조도 6</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-6"
+                    name="light-control-6"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-6" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-6"
+                    name="light-control-6"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-6" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-6"
+                    name="light-control-6"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-6" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 7 -->
+              <li>
+                <p>조도 7</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-7"
+                    name="light-control-7"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-7" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-7"
+                    name="light-control-7"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-7" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-7"
+                    name="light-control-7"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-7" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+
+              <!-- 조도 8 -->
+              <li>
+                <p>조도 8</p>
+                <div class="light-radio">
+                  <input
+                    type="radio"
+                    id="light-off-8"
+                    name="light-control-8"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-off-8" class="radio-label-3"
+                    ><div>OFF</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-50-8"
+                    name="light-control-8"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-50-8" class="radio-label-3"
+                    ><div>50%</div></label
+                  >
+
+                  <input
+                    type="radio"
+                    id="light-100-8"
+                    name="light-control-8"
+                    class="radio-input-3 radio"
+                  />
+                  <label for="light-100-8" class="radio-label-3"
+                    ><div>100%</div></label
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="control-2">
+        <div class="area wrap">
+          <div class="footer-title">
+            <p>구역</p>
+          </div>
+          <ul class="list">
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label click"><div>1 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>2 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>3 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>4 구역</div></label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>5 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>6 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>7 구역</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="radio" class="radio-input radio" />
+                    <label class="radio-label"><div>8 구역</div></label>
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">출입구</span>
+            </div>
+          </ul>
+        </div>
+        <div class="box-wrap wrap">
+          <div class="footer-title">
+            <p>박스</p>
+          </div>
+          <ul class="list">
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-51</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-41</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-31</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-21</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-11</div></label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-52</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-42</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-32</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-22</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-12</div></label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-53</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-43</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-33</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-23</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-13</div></label>
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">FRONT</span>
+            </div>
+            <div class="number-wrap">
+              <li class="item-box">
+                <div>5</div>
+              </li>
+              <li class="item-box">
+                <div>4</div>
+              </li>
+              <li class="item-box">
+                <div>3</div>
+              </li>
+              <li class="item-box">
+                <div>2</div>
+              </li>
+              <li class="item-box">
+                <div>1</div>
+              </li>
+            </div>
+            <div class="list-st">
+              <div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-54</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-44</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-34</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-24</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-14</div></label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-55</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-45</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-35</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-25</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-15</div></label>
+                  </li>
+                </div>
+                <div class="item-wrap">
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-56</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-46</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-36</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-26</div></label>
+                  </li>
+                  <li class="item-box">
+                    <input type="checkbox" class="radio-input radio" />
+                    <label class="radio-label"><div>1-16</div></label>
+                  </li>
+                </div>
+              </div>
+              <span class="title-2">BACK</span>
+            </div>
+          </ul>
+        </div>
+        <div class="sensor wrap">
+          <div class="footer-title">
+            <p>환경센서</p>
+          </div>
+          <div class="list">
+            <ul>
+              <li class="check">
+                <p>온도</p>
+                <div>
+                  <div class="number">
+                    <p>25</p>
+                    <span>℃</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/check.svg" alt="" />정상
+                  </div>
+                </div>
+              </li>
+              <li class="check">
+                <p>습도</p>
+                <div>
+                  <div class="number">
+                    <p>1</p>
+                    <span>%</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/check.svg" alt="" />정상
+                  </div>
+                </div>
+              </li>
+              <li class="check">
+                <p>항온</p>
+                <div>
+                  <div class="number">
+                    <p>25</p>
+                    <span>℃</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/check.svg" alt="" />정상
+                  </div>
+                </div>
+              </li>
+              <li class="check">
+                <p>항습</p>
+                <div>
+                  <div class="number">
+                    <p>25</p>
+                    <span>℃</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/check.svg" alt="" />정상
+                  </div>
+                </div>
+              </li>
+              <li class="warning">
+                <p>암모니아</p>
+                <div>
+                  <div class="number">
+                    <p>25</p>
+                    <span>ppm</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/warning.svg" alt="" />경고
+                  </div>
+                </div>
+              </li>
+              <li class="danger">
+                <p>로드셀</p>
+                <div>
+                  <div class="number">
+                    <p>25</p>
+                    <span>kg</span>
+                  </div>
+                  <div class="icon">
+                    <img src="/assets/images/icon/danger.svg" alt="" />위험
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="light-list wrap">
+          <ul>
+            <li class="on">
+              <p>조도 1</p>
+              <div>100% <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 2</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 3</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 4</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 5</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 6</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="off">
+              <p>조도 7</p>
+              <div>OFF <span></span></div>
+            </li>
+            <li class="on">
+              <p>조도 8</p>
+              <div>100% <span></span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="server wrap">
+          <div class="footer-title">
+            <p>서버 데이터</p>
+          </div>
+          <ul>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+            <li>
+              <p>X축 (현재위치)</p>
+              <span>140.00</span>
+            </li>
+          </ul>
+        </div>
+        <div class="state wrap">
+          <div class="footer-title">
+            <p>상태 확인</p>
+          </div>
+          <ul class="st-box-list">
+            <li>
+              <p>투입구 셔터</p>
+              <span>Up</span>
+            </li>
+            <li>
+              <p>140 셔틀</p>
+              <span>BWD</span>
+            </li>
+            <li>
+              <p>항온항습기</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>공기정화</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>셔큘레이터</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>메인에어밸브</p>
+              <span>Close</span>
+            </li>
+            <li>
+              <p>세정수조(고수위)</p>
+              <span>Yes</span>
+            </li>
+            <li>
+              <p>세정수조(저수위)</p>
+              <span>No</span>
+            </li>
+            <li>
+              <p>세정배수(고수위)</p>
+              <span>Yes</span>
+            </li>
+            <li>
+              <p>세정배수(저수위)</p>
+              <span>No</span>
+            </li>
+          </ul>
+        </div>
+        <div class="box-sensor wrap">
+          <div class="footer-title">
+            <p>박스 센서</p>
+          </div>
+          <ul class="st-box-list">
+            <li>
+              <p>투입구</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>플립 1</p>
+              <span>BWD</span>
+            </li>
+            <li>
+              <p>플립 2</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>버퍼</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>톱밥털기</p>
+              <span>On</span>
+            </li>
+            <li class="off">
+              <p>톱밥 공급부</p>
+              <span>Off</span>
+            </li>
+            <li>
+              <p>톱밥 평탄화</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>비전존</p>
+              <span>On</span>
+            </li>
+            <li>
+              <p>세정존</p>
+              <span>On</span>
+            </li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
+  <script>
+    document
+      .querySelector(".control-btn-1")
+      .addEventListener("click", function () {
+        document
+          .querySelectorAll(".control-btn-1, .control-btn-2")
+          .forEach((btn) => {
+            btn.classList.remove("active");
+          });
+        this.classList.add("active");
+
+        document.getElementById("control").classList.add("active");
+        document.getElementById("control-2").classList.remove("active");
+      });
+
+    document
+      .querySelector(".control-btn-2")
+      .addEventListener("click", function () {
+        document
+          .querySelectorAll(".control-btn-1, .control-btn-2")
+          .forEach((btn) => {
+            btn.classList.remove("active");
+          });
+
+        this.classList.add("active");
+
+        document.getElementById("control-2").classList.add("active");
+        document.getElementById("control").classList.remove("active");
+      });
+  </script>
 </html>
