@@ -590,7 +590,7 @@ header .header-wrap .logo {
   font-size: 0;
 }
 header .header-wrap .logo a {
-  background-image: url(/assets/images/logo.png);
+  background-image: url(/assets/images/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -606,7 +606,7 @@ header .header-wrap .header-title {
 header .header-wrap .header-title h1 {
   font-size: 30px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
 }
 header .header-wrap .header-icon {
   display: flex;
@@ -856,6 +856,7 @@ footer .title-2 {
   color: #808080;
   gap: 10px;
   padding: 10px 0;
+  padding-top: 0;
 }
 .work-list .list .bottom {
   padding-top: 10px;
@@ -1222,9 +1223,9 @@ footer .title-2 {
 .table_tab {
   font-size: 18px;
   width: 100%;
-  margin: 0 0 0 auto;
   height: 42px;
   position: absolute;
+  left: 0;
   top: -40px;
 }
 .table_tab .control-btn-1 {
@@ -1245,6 +1246,7 @@ footer .title-2 {
   align-items: center;
   justify-content: center;
   bottom: 0;
+  left: 50px;
 }
 .table_tab .control-btn-1.active {
   padding-top: 5px;
@@ -1266,7 +1268,7 @@ footer .title-2 {
   letter-spacing: 0;
   border: 0;
   position: absolute;
-  left: 109px;
+  left: 159px;
   z-index: 1;
   bottom: 0;
 }
@@ -1280,6 +1282,10 @@ footer .title-2 {
 }
 .table_tab button {
   color: #646464;
+}
+
+#control-2 .radio-label {
+  cursor: auto;
 }
 
 .main {
@@ -1298,12 +1304,11 @@ footer .title-2 {
 .main .main-3d .side ul {
   display: flex;
   flex-direction: column;
-  gap: 30.2px;
+  gap: 23.2px;
 }
 .main .main-3d .side ul li {
   display: flex;
   flex-direction: column;
-  gap: 2.3px;
 }
 .main .main-3d .side ul li p {
   font-size: 14px;
