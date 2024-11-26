@@ -590,7 +590,7 @@ header .header-wrap .logo {
   font-size: 0;
 }
 header .header-wrap .logo a {
-  background-image: url(/assets/images/logo2.png);
+  background-image: url(/assets/images/logo.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -653,7 +653,7 @@ footer > div {
 footer > div.active {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 40px;
 }
 footer .footer-title {
   display: flex;
@@ -851,7 +851,7 @@ footer .title-2 {
 }
 .work-list .list .top {
   display: flex;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   color: #808080;
   gap: 10px;
@@ -906,7 +906,7 @@ footer .title-2 {
   justify-content: center;
   border-radius: 3px;
   transition: all 0.3s ease;
-  font-size: 12px;
+  font-size: 14px;
 }
 .work-list .list .bottom li .mg > button:hover {
   background-color: #501525;
@@ -1006,7 +1006,7 @@ footer .title-2 {
   align-items: center;
 }
 .light .list ul li p {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: -0.4px;
   color: #a5a5a5;
   width: 37px;
@@ -1034,7 +1034,7 @@ footer .title-2 {
   box-shadow: inset 0px -1px 5px rgb(255, 192, 19);
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(232, 211, 16, 0.29) 29%, rgb(27, 20, 41) 100%);
   color: white;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 3px;
 }
@@ -1042,12 +1042,12 @@ footer .title-2 {
 .sensor .list ul {
   display: flex;
   flex-direction: column;
-  gap: 12.4px;
+  gap: 10px;
 }
 .sensor .list ul li {
   border: 1px solid white;
   display: flex;
-  padding: 2px 15px 2px 22px;
+  padding: 4px 15px 4px 22px;
   border-radius: 3px;
 }
 .sensor .list ul li > p {
@@ -1055,6 +1055,8 @@ footer .title-2 {
   letter-spacing: 0;
   color: #a5a5a5;
   width: 80px;
+  display: flex;
+  align-items: center;
 }
 .sensor .list ul li > div {
   display: flex;
@@ -1081,7 +1083,7 @@ footer .title-2 {
 }
 .sensor .list ul li .icon {
   padding-left: 10px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   border-left: 1px solid #444155;
   display: flex;
@@ -1122,13 +1124,13 @@ footer .title-2 {
   border-bottom: 0;
 }
 .light-list ul li p {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   color: #a5a5a5;
 }
 .light-list ul li > div {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
   display: flex;
   align-items: center;
@@ -1155,7 +1157,7 @@ footer .title-2 {
   gap: 8px;
 }
 .server ul li {
-  padding: 12px 15px;
+  padding: 9.5px 9px;
   width: calc(50% - 4px);
   border-radius: 2px;
   border: 1px solid #9f6fce;
@@ -1164,7 +1166,7 @@ footer .title-2 {
   align-items: center;
 }
 .server ul li p {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 200;
   letter-spacing: -0.8px;
   line-height: 13px;
@@ -1172,20 +1174,20 @@ footer .title-2 {
 }
 .server ul li span {
   font-weight: 400;
-  font-size: 14px;
-  padding-top: 5px;
+  font-size: 16px;
+  padding-top: 10px;
   line-height: 16px;
   color: white;
 }
 
 .st-box-list {
   display: flex;
-  width: 181px;
+  width: 195px;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 7px;
 }
 .st-box-list li {
-  padding: 8px 9px;
+  padding: 8px 6px;
   width: calc(50% - 4px);
   border-radius: 2px;
   border: 1px solid #5878b8;
@@ -1194,7 +1196,7 @@ footer .title-2 {
   align-items: center;
 }
 .st-box-list li p {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 200;
   letter-spacing: -0.8px;
   line-height: 13px;
