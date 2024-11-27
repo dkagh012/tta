@@ -107,6 +107,26 @@ footer {
     transition: all 0.3s ease;
   }
 }
+.radio-check {
+  .radio-label {
+    color: #9e9ba4;
+    background: linear-gradient(
+      180deg,
+      rgba(152, 145, 236, 1) 0%,
+      rgba(111, 104, 217, 1) 50%,
+      rgba(131, 122, 254, 1) 100%
+    );
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2),
+      inset 0px -2px 4px rgba(0, 0, 0, 0.3); /* 외부 + 내부 그림자 */
+    > div {
+      color: #e6d8ff;
+      text-shadow: 0px 3px 6px rgba(82, 16, 199, 0.31);
+      text-align: center;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+  }
+}
 
 .radio-label-2 {
   > div {
@@ -669,7 +689,7 @@ footer {
     width: 140px;
     height: 40px;
     letter-spacing: 0;
-    background-image: url(/assets/images/table-tab-1-n.png);
+    background-image: url(../../assets/images/table-tab-1-n.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -691,13 +711,13 @@ footer {
       bottom: 2px;
       font-size: 20px;
       font-weight: 600;
-      background-image: url(/assets/images/table-tab-1-a.png);
+      background-image: url(../../assets/images/table-tab-1-a.png);
     }
   }
   .control-btn-2 {
     width: 140px;
     height: 40px;
-    background-image: url(/assets/images/table-tab-2-n.png);
+    background-image: url(../../assets/images/table-tab-2-n.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -707,10 +727,10 @@ footer {
     position: absolute;
     left: 159px;
     z-index: 1;
-    bottom: 0;
+    bottom: -1px;
     &.active {
       padding-top: 5px;
-      background-image: url(/assets/images/table-tab-2-a.png);
+      background-image: url(../../assets/images/table-tab-2-a.png);
       color: #c8bfe9;
       z-index: 2;
       font-size: 20px;
