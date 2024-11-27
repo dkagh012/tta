@@ -1067,27 +1067,27 @@ footer .title-2 {
   font-size: 14px;
   letter-spacing: 0;
   color: #a5a5a5;
-  width: 80px;
+  width: 60px;
   display: flex;
   align-items: center;
 }
 .sensor .list ul li > div {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - 80px);
+  width: calc(100% - 60px);
 }
 .sensor .list ul li .number {
   display: flex;
   gap: 10px;
   align-items: flex-end;
-  width: 61.32px;
+  width: 96px;
 }
 .sensor .list ul li .number p {
   letter-spacing: -0.3px;
-  font-size: 17px;
+  font-size: 14px;
   color: white;
-  width: 20px;
   text-align: right;
+  flex: 0 0 46px;
 }
 .sensor .list ul li .number span {
   font-size: 11px;
