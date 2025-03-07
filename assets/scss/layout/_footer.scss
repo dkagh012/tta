@@ -341,7 +341,7 @@ footer {
         border-radius: 20px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 0 10px;
         border: 3px solid transparent;
         background-image: linear-gradient(#1d172f, #1c172e),
@@ -349,7 +349,8 @@ footer {
         background-origin: border-box;
         background-clip: padding-box, border-box;
         overflow: hidden;
-        color: white;
+
+        color: #646464;
         font-size: 16px;
         font-weight: bold;
         z-index: 1;
@@ -360,31 +361,32 @@ footer {
 
       .toggle-thumb {
         position: absolute;
-        right: 3px;
         width: 34px;
         height: 26px;
-        background: linear-gradient(
-          145deg,
-          #a267e8,
-          #825dc7
-        ); /* 보라색 그라데이션 */
         border-radius: 13px;
         box-shadow: inset 0px 3px 6px rgb(220 210 255 / 90%);
         transition: all 0.3s ease;
+        left: 3px;
+        right: inherit;
+        background: #4d4556;
       }
     }
 
     .check-input:checked + .check-label {
       > .check-text {
-        justify-content: flex-end;
+        justify-content: space-between;
         background-image: linear-gradient(#1d172f, #1c172e),
           linear-gradient(to bottom, #5d5088, #44316a);
-        color: #646464;
+        color: white;
       }
       .toggle-thumb {
-        left: 3px;
-        right: inherit;
-        background: #4d4556;
+        right: 3px;
+        left: inherit;
+        background: linear-gradient(
+          145deg,
+          #a267e8,
+          #825dc7
+        ); /* 보라색 그라데이션 */
       }
     }
     ul {

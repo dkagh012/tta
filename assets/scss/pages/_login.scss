@@ -1,0 +1,128 @@
+.login {
+  background-image: url(/assets/images/login_bc.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  .loginWrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .loginBox {
+      border: 1px solid rgba(129, 70, 217, 0.55);
+      background-color: transparent;
+      width: 457px;
+      height: 558px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .loginLogo {
+        font-size: 18px;
+        letter-spacing: -0.5px;
+        line-height: 20px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+      }
+      .loginInput {
+        padding-top: 34px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        .userInput {
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translate(-50%, -50%);
+          }
+          input {
+            width: 337px;
+            height: 51px;
+            border-radius: 30px;
+            background-color: white;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 16px 0;
+            padding-left: 58px;
+            &::placeholder {
+              color: #b1b1b1;
+            }
+          }
+        }
+      }
+      .userBtn {
+        width: 337px;
+        height: 51px;
+        border-radius: 30px;
+        background-color: #7039a4;
+        font-size: 21px;
+        color: white;
+        font-weight: 600;
+        margin-top: 14px;
+      }
+      .custom-checkbox {
+        display: flex;
+        padding-top: 16px;
+        padding-left: 16px;
+        align-items: center;
+        font-family: sans-serif;
+        cursor: pointer;
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+      }
+      .checkmark {
+        position: relative;
+        height: 24px;
+        width: 24px;
+        background-color: white;
+        border-radius: 4px;
+        margin-right: 10px;
+        transition: background-color 0.2s;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark {
+        background-color: #6b46c1;
+      }
+
+      .checkmark:after {
+        content: "";
+        background-image: url(/assets/images/icon/check.png);
+        position: absolute;
+        display: none;
+        left: 5px;
+        top: 5px;
+        width: 16px;
+        height: 12px;
+        background-size: cover;
+      }
+
+      .custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      .checkbox-label {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+  .copyright {
+    font-size: 15px;
+    color: #8b8b8b;
+    padding-top: 37px;
+    text-align: center;
+  }
+}

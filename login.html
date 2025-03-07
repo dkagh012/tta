@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/app.css" />
+  </head>
+  <body class="login">
+    <div class="loginWrap">
+      <div class="loginBox">
+        <div class="loginLogo">
+          <img src="/assets/images/bugsfarm.png" alt="" />
+          <p>통합 관제 시스템</p>
+        </div>
+        <div class="loginInput">
+          <div class="userId userInput">
+            <input type="text" placeholder="아이디" />
+            <img src="/assets/images/icon/user1.svg" alt="" />
+          </div>
+          <div class="userPw userInput">
+            <img src="/assets/images/icon/pw1.svg" alt="" />
+            <input type="password" placeholder="비밀번호" />
+          </div>
+          <div class="userCheck">
+            <label class="custom-checkbox">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+              <span class="checkbox-label">아이디 저장</span>
+            </label>
+          </div>
+        </div>
+        <button class="userBtn" type="submit">로그인</button>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2024. Koreasoft.All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // 아이디 입력 필드 관련 요소
+      const userIdInput = document.querySelector(".userId input");
+      const userIdIcon = document.querySelector(".userId img");
+
+      // 비밀번호 입력 필드 관련 요소
+      const userPwInput = document.querySelector(".userPw input");
+      const userPwIcon = document.querySelector(".userPw img");
+
+      // 아이디 입력 필드 이벤트 리스너
+      userIdInput.addEventListener("input", function () {
+        if (this.value.length > 0) {
+          // 입력값이 있으면 아이콘 변경
+          userIdIcon.src = "/assets/images/icon/user2.svg";
+        } else {
+          // 입력값이 없으면 원래 아이콘으로 변경
+          userIdIcon.src = "/assets/images/icon/user1.svg";
+        }
+      });
+
+      // 비밀번호 입력 필드 이벤트 리스너
+      userPwInput.addEventListener("input", function () {
+        if (this.value.length > 0) {
+          // 입력값이 있으면 아이콘 변경
+          userPwIcon.src = "/assets/images/icon/pw2.svg";
+        } else {
+          // 입력값이 없으면 원래 아이콘으로 변경
+          userPwIcon.src = "/assets/images/icon/pw1.svg";
+        }
+      });
+
+      // 페이지 로드 시 초기 상태 설정
+      // 입력 필드에 값이 있는지 확인하고 아이콘 설정
+      if (userIdInput.value.length > 0) {
+        userIdIcon.src = "/assets/images/icon/user2.svg";
+      }
+
+      if (userPwInput.value.length > 0) {
+        userPwIcon.src = "/assets/images/icon/pw2.svg";
+      }
+    });
+  </script>
+</html>
